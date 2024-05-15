@@ -29,7 +29,7 @@ COPY --from=builder /app/main .
 COPY templates/index.html .
 
 # Expose port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 3000:3000
 
 # Command to run the executable
 CMD ["./main"]
