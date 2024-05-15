@@ -5,7 +5,7 @@ FROM golang:1.17-alpine AS builder
 WORKDIR /app
 
 # Copy the rest of the application source code
-COPY ../templates/main.go .
+COPY ../main.go .
 
 # Build the Go application
 RUN go build -o main .
