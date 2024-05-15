@@ -10,7 +10,7 @@ COPY go.sum .
 RUN go mod download
 
 # Copy the rest of the application source code
-COPY ../templates/index.html .
+COPY ../templates/main.go .
 
 # Build the Go application
 RUN go build -o main .
