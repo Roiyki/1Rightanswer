@@ -1,2 +1,3 @@
-# 1Rightanswer
-An application trivia game
+# Mahsubak Flights
+
+Application of search of flights
