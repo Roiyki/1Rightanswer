@@ -11,7 +11,8 @@ type Flight struct {
 	ID          int
 	Origin      string
 	Destination string
-	Time        string
+	DepartDate  string
+	ReturnDate  string
 }
 
 // Handler for the home page
@@ -29,7 +30,8 @@ func flightHandler(w http.ResponseWriter, r *http.Request) {
 		ID:          1,
 		Origin:      "New York",
 		Destination: "Los Angeles",
-		Time:        "10:00 AM",
+		DepartDate:  "15/05/2024",
+		ReturnDate:  "24/05/2024",
 	}
 	tmpl := template.Must(template.ParseFiles("./templates/flight.html"))
 	err := tmpl.Execute(w, flight)
