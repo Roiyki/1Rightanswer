@@ -10,43 +10,61 @@
     <h1>Flights</h1>
     <h2>Welcome to flight tickets shop</h2>
     <form>
-        <label>Choose source path: </label>
-        <select>
-            <option>Tel-Aviv</option>
-            <option>Rome</option>
-            <option>Milan</option>
-            <option>Budapest</option>
-            <option>Lisabon</option>
-            <option>Paris</option>
-            <option>Prague</option>
-            <option>Barcelona</option>
-            <option>London</option>
-            <option>Berlin</option>
-            <option>Larnaca</option>
-            <option>Amsterdam</option>
-        </select>
-        <br>
-        <label>Choose destination path: </label>
-        <select>
-            <option>Tel-Aviv</option>
-            <option>Rome</option>
-            <option>Milan</option>
-            <option>Budapest</option>
-            <option>Lisabon</option>
-            <option>Paris</option>
-            <option>Prague</option>
-            <option>Barcelona</option>
-            <option>London</option>
-            <option>Berlin</option>
-            <option>Larnaca</option>
-            <option>Amsterdam</option>
-        </select>
+        <h3>Where you want to fly?</h3>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Flight source: </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Tel-Aviv</option>
+              <option>London</option>
+              <option>Paris</option>
+              <option>Berlin</option>
+              <option>Rome</option>
+              <option>Prague</option>
+              <option>Budapest</option>
+              <option>Vienna</option>
+              <option>New-York</option>
+              <option>Amsterdam</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Flight destination: </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Tel-Aviv</option>
+                <option>London</option>
+                <option>Paris</option>
+                <option>Berlin</option>
+                <option>Rome</option>
+                <option>Prague</option>
+                <option>Budapest</option>
+                <option>Vienna</option>
+                <option>New-York</option>
+                <option>Amsterdam</option>
+            </select>
+        </div>
         
-        <label>Source date: </label>
-        <input type="date">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Source date: </label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
         
-        <label>Destination date: </label>
-        <input type="date">
+        
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Destination date: </label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Round Trip
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              One way
+            </label>
+          </div>
 
         <button type="button" class="btn btn-primary">Submit</button>
     </form>
